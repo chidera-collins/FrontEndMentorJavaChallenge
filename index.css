@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    background-color: burlywood;
+}
+.container{
+    height: 400px;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-items: center;
+    transform: translateX(14%);
+    /* position: relative; */
+}
+.image_holder{
+    height: inherit;
+    width: 70%;
+    background-color: gray;
+}
+.content{
+    /* background-color:yellow ; */
+    /* height: inherit; */
+    width: 80%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: start;
+    line-height: 30px;
+}
+h3{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    font-size: 1.2rem;
+}
+.pp{
+    margin-top: 20px;
+}
+.share_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+
+}
+.avartar_content{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.2rem;
+ 
+}
+.avartar{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    /* background-color: pink; */
+    background-image: url(images/avatar-michelle.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* background-color: blue; */
+}
+button:hover{
+    background-color: grey;
+    cursor: pointer;    
+}
+.links{
+    position: absolute;
+    height: 40px;
+    background-color: gray;
+    display: none;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 190px;
+    top: 54%;
+    right: 0;
+    margin-right: -5%;
+}
+span{
+    color: wheat;
+}
+.show{
+    display: flex;
+}
+
+
+/*media screen edit*/
+
+@media screen  and (max-width:850px) {
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        background-color: burlywood;
+    }
+    .container{
+        min-height: 400px;
+        width: 80%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+    }
+    .image_holder{
+        height: 270px;
+        width: 100%;
+        background-color: gray;
+    }
+    .content{
+        /* background-color:yellow ; */
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        text-align: start;
+        line-height: 30px;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    p{
+        font-size: 1.6rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .links{
+        position: absolute;
+        height: 40px;
+        background-color: gray;
+        display: none;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        width: 190px;
+        top: 110%;
+        right: 0;
+        margin-right: -5%;
+    }
+    .show{
+        display: flex;
+    }
+ 
+    
+}
+
+@media screen and (max-width:450px) {
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        background-color: burlywood;
+    }
+    .container{
+        min-height: 400px;
+        width: 80%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+    }
+    .image_holder{
+        height: 150px;
+        width: 100%;
+        background-color: gray;
+    }
+    .content{
+        /* background-color:yellow ; */
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        text-align: start;
+        line-height: 30px;
+    }
+    h3{
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    p{
+        font-size: 1.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .share_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 96%;
+    
+    }
+    .avartar_content{
+        display: flex;
+        margin-top: 20px;
+        width: 79%;
+        min-height: 10px;
+        gap: 10px;
+        align-items: center;
+        font-size: 1.2rem;
+     
+    }
+    .avartar{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-image: url(images/avatar-michelle.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .avartar_content p{
+        font: 0em;
+    }
+    .show{
+        display: flex;
+    }
+}
